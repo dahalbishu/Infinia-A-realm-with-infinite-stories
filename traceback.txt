@@ -1,0 +1,38 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+TypeError: no default __reduce__ due to non-trivial __cinit__ (perhaps store.gemini_chat.model._client._transport._grpc_channel._channel = <grpc._cython.cygrpc.Channel object at 0x7f046cefa040>)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "/home/bishu/Downloads/renpy-8.1.3  1-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/bishu/Downloads/renpy-8.1.3  1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "/home/bishu/Downloads/renpy-8.1.3  1-sdk/renpy/loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "/home/bishu/Downloads/renpy-8.1.3  1-sdk/renpy/loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "/home/bishu/Downloads/renpy-8.1.3  1-sdk/renpy/compat/pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+  File "stringsource", line 2, in grpc._cython.cygrpc.Channel.__reduce_cython__
+TypeError: no default __reduce__ due to non-trivial __cinit__ (perhaps store.gemini_chat.model._client._transport._grpc_channel._channel = <grpc._cython.cygrpc.Channel object at 0x7f046cefa040>)
+
+Linux-6.5.0-14-generic-x86_64-with-glibc2.38 x86_64
+Ren'Py 8.1.3.23091805
+Infinia 1.0
+Mon Jan 22 12:02:18 2024
