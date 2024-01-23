@@ -18,18 +18,18 @@ Download the Python 3.9 folder from the provided Google Drive link ( https://dri
 
 Replace the existing lib/python3.9 folder in the Ren'Py SDK directory with the downloaded one. Note: This folder contains necessary Python packages; adjust them as needed.
 
-#Alternative Setup
+## Alternative Setup
 If encountering package errors, follow these steps:
 
 Create a new conda environment.
 Install the required Python packages: google-generativeai, pillow, and other necessary libraries.
 Copy the lib/python3.9 folder from the conda environment to the Ren'Py SDK.
 
-# Hugging Face API Key Replacement
+## Hugging Face API Key Replacement
 Open video_gen.py and music_gen.py in the Ren'Py SDK folder.
 Replace "HUGGING_FACE_API_KEY" with your actual Hugging Face API key.
 
-# Google GenerativeAI API Key Replacement
+## Google GenerativeAI API Key Replacement
 Open game/script.rpy in your project folder.
 Replace "GOOGLE_GENERATIVEAI_API_KEY" with your actual Google GenerativeAI API key.
 
