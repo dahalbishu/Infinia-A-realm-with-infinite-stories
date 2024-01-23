@@ -3,7 +3,7 @@ Welcome to Infinia, an innovative game where players can shape their own stories
 
 # Getting Started
 
-#Prerequisites
+## Prerequisites
 Download Ren'Py from the official website.
 Ensure you have Python 3.9 installed.
 
