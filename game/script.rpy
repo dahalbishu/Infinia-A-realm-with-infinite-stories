@@ -36,7 +36,8 @@ label start:
     
     python:       
         import google.generativeai as genai
-        genai.configure(api_key="AIzaSyCPd0_bydYrGHMDPH3J7BXVEG04ObSaaWA")
+        #Replace your google.generativeai API key here
+        genai.configure(api_key="GOOGLE_GENERATIVEAI_API_KEY")
         safety_settings = [
         {
             "category": "HARM_CATEGORY_HARASSMENT",

@@ -25,6 +25,16 @@ Create a new conda environment.
 Install the required Python packages: google-generativeai, pillow, and other necessary libraries.
 Copy the lib/python3.9 folder from the conda environment to the Ren'Py SDK.
 
+# Hugging Face API Key Replacement
+Open video_gen.py and music_gen.py in the Ren'Py SDK folder.
+Replace "HUGGING_FACE_API_KEY" with your actual Hugging Face API key.
+
+# Google GenerativeAI API Key Replacement
+Open game/script.rpy in your project folder.
+Replace "GOOGLE_GENERATIVEAI_API_KEY" with your actual Google GenerativeAI API key.
+
+Save changes to ensure correct API key configuration.
+
 # Running the Game
 Create a new project named 'Infinia' and place all files and folders inside it.
 navigate to Ren'Py SDK folder

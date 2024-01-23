@@ -22,8 +22,8 @@ def rajat(place,ii):
     #API_URL = "https://api-inference.huggingface.co/models/digiplay/AbsoluteReality_v1.8.1"
     #API_URL = "https://api-inference.huggingface.co/models/Lykon/absolute-reality-1.81"
 
-
-    headers = {"Authorization": "Bearer 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"}
+    #replace your Hugging Face API key here
+    headers = {"Authorization": "Bearer HUGGING_FACE_API_KEY"}
 
     def query(payload):
         response = requests.post(API_URL, headers=headers, json=payload)

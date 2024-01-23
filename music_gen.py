@@ -6,7 +6,8 @@ import io
 def music(rthym):
 
     API_URL = "https://api-inference.huggingface.co/models/facebook/musicgen-small"
-    headers = {"Authorization": "Bearer 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"}
+    #replace your Hugging Face API key here
+    headers = {"Authorization": "Bearer HUGGING_FACE_API_KEY"}
 
     def query(payload):
         response = requests.post(API_URL, headers=headers, json=payload)
